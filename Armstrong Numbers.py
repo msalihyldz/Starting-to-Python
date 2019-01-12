@@ -1,21 +1,21 @@
 
-def armstrong(sayı):
+def armstrong(number):
 
-    sayı = str(sayı)
+    number = str(number)
     a = 0
-    for i in sayı:
+    for i in number:
 
         a += int(i)**3
-    if (int(sayı)==a):
+    if (int(number)==a):
         return True
     else:
         return False
 
 while True:
-    sayı =int(input("Please write a number:"))
-    if(armstrong (sayı)):
-        print(sayı,"is an Armstrong Number")
+    number =int(input("Please write a number:"))
+    if(armstrong (number)):
+        print(number,"is an Armstrong Number")
     else:
-        print(sayı,"is not an Armstrong Number")
+        print(number,"is not an Armstrong Number")
 
 
